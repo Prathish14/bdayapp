@@ -113,9 +113,21 @@ const PhotoUploader = () => {
         }
         @media (max-width: 768px) {
           img {
-            width: clamp(300px, 50vw, 600px);
+            width: clamp(80vw, 90vw, 100vw);
           }
         }
+        @keyframes photoFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
       `}</style>
 
       {randomStars.map((star, i) => (
@@ -220,7 +232,7 @@ const PhotoUploader = () => {
             src={photo}
             alt="Uploaded or Default"
             style={{
-              width: "clamp(200px, 35vw, 600px)",
+              width: "clamp(400px, 80vw, 700px)",
               maxWidth: "90%",
               height: "auto",
               borderRadius: "10px",
