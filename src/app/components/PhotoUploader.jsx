@@ -4,7 +4,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import Ballpit from "./Ballpit";
 
 const PhotoUploader = () => {
-  const [photo] = useState("https://i.ibb.co/6L8ScxF/912-A8575-Copy-Copy-Copy.jpg");
+  const [photo] = useState("https://dev-storage.fotoowl.ai/events/1057/j8NCXEn4MSXSqwBIJPrdPFvEfjY2/med/912A8628.webp?last=1744976508");
   const [clickBursts, setClickBursts] = useState([]);
   const [audio, setAudio] = useState(null);
   const [isPlaying, setIsPlaying] = useState(true);
