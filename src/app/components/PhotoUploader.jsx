@@ -3,6 +3,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import Ballpit from "./Ballpit";
 
+import "birth"
+
 const PhotoUploader = () => {
   const [photo] = useState("https://dev-storage.fotoowl.ai/events/1057/j8NCXEn4MSXSqwBIJPrdPFvEfjY2/med/912A8628.webp?last=1744976508");
   const [clickBursts, setClickBursts] = useState([]);
@@ -47,7 +49,7 @@ const PhotoUploader = () => {
   ), []);
 
   useEffect(() => {
-    const audioInstance = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+    const audioInstance = new Audio("/public/audio/happy-birthday-song.mp3");
     audioInstance.loop = true;
     audioInstance.play().catch((err) => console.log("Autoplay blocked:", err));
     setAudio(audioInstance);
